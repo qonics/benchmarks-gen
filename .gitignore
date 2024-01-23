@@ -1,0 +1,6 @@
+.env
+go.sum
+cache-manager*
+cache-manager*
+tmp/*
+assessments/*
