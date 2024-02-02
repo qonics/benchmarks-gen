@@ -1,6 +1,6 @@
 # Go gin
 
-Create a streamlined Go Gin project instantly with our Quickstart template. Featuring an MVC structure, seamless integration with Cassandra and ScyllaDB, and a set of handy helpers, this project ensures rapid development, scalability, and efficient data handling. Simplify your workflow and focus on building great features without the hassle.
+Effortlessly generate benchmark datasets for Cassandra, Scylla, MariaDB (MySQL), and PostgreSQL. Our tool enables the swift creation of millions of records within minutes through user-friendly HTTP requests or terminal commands. Simplify your benchmarking process and efficiently evaluate database performance. 
 
 ## How it works
 Just clone this project and start coding in a minute

@@ -1,6 +1,6 @@
 .env
 go.sum
-cache-manager*
-cache-manager*
+benchmarks-gin*
+benchmarks-gin*
 tmp/*
 assessments/*

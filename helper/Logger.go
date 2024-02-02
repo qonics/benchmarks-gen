@@ -14,14 +14,14 @@ var (
 )
 
 func logFile() *os.File {
-	file, err := os.OpenFile("cache-manager-"+time.Now().Format("2006-01-02")+".log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	file, err := os.OpenFile("benchmarks-gin-"+time.Now().Format("2006-01-02")+".log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		panic(fmt.Sprintf("Open log file failed: %v", err))
 	}
 	return file
 }
 func singleLogFile(title string) *os.File {
-	file, err := os.OpenFile("cache-manager-"+title+".log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	file, err := os.OpenFile("benchmarks-gin-"+title+".log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		panic(fmt.Sprintf("Open single %v log file failed: %v", title, err))
 	}

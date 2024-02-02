@@ -1,7 +1,6 @@
 package config
 
 import (
-	"os"
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -12,11 +11,11 @@ import (
 var DB *gorm.DB
 var SESSION *gocql.Session
 
-func ConnectDb() {
+func ConnectDb(database string) {
 
 	//Cassandra and scylladb
 	cluster := gocql.NewCluster("127.0.0.1")
-	cluster.Keyspace = os.Getenv("database")
+	cluster.Keyspace = database
 	cluster.Consistency = gocql.One
 	cluster.ConnectTimeout = time.Second * 5
 	cluster.Timeout = time.Second * 5
